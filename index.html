@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdel Tareq Winata – Network Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="logo"><i></i><span>Tareq</span></div>
+  <div class="tabs" role="tablist">
+    <button class="on" data-p="home">Home</button>
+    <button data-p="about">About</button>
+    <button data-p="project">Project</button>
+    <button data-p="hobby">Hobi</button>
+  </div>
+</nav>
+<main>
+
+<!-- 1. HOMEPAGE -->
+<section class="page on" id="home">
+  <div class="hero">
+    <p class="hi">Halo, saya</p>
+    <h1>Abdel Tareq <span>Winata</span></h1>
+    <p class="role" id="role"></p>
+    <div class="wire" aria-hidden="true"><div class="node"></div><div class="node"></div><div class="node"></div><div class="pkt"></div><div class="pkt"></div></div>
+    <p class="lead">Saya membangun, menguji, dan memastikan jaringan berjalan andal: dari konfigurasi perangkat, pengujian ONT, sampai validasi migrasi database.</p>
+    <div class="cta">
+      <button class="btn" data-go="project">Lihat project</button>
+      <button class="btn ghost" data-go="about">Kenali saya</button>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b data-n="3">0</b><small>Tahun di dunia IT &amp; jaringan</small></div>
+    <div class="stat"><b data-n="4">0</b><small>Tools network testing</small></div>
+    <div class="stat"><b data-n="3">0</b><small>Sertifikasi Fortinet NSE</small></div>
+    <div class="stat"><b data-n="3">0</b><small>Olahraga favorit</small></div>
+  </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section class="page" id="about">
+  <h2 class="title">Tentang saya</h2>
+  <p class="sub">Network Engineer berlatar Teknik Telekomunikasi, berpengalaman di infrastruktur jaringan, pengujian jaringan, dan validasi teknis. Sebelumnya juga bekerja di Product &amp; Presales yang berhubungan langsung dengan klien.</p>
+  <div class="split">
+    <div class="card">
+      <h3>Perjalanan</h3>
+      <div class="tl">
+        <div><small>Apr 2024 – Sep 2026</small><br><b>Network Engineer</b><br>Sinergi Merah Putih</div>
+        <div><small>Sep 2023 – Apr 2024</small><br><b>Product &amp; Presales</b><br>Intikom Berlian Mustika</div>
+        <div><small>Feb 2023 – Mei 2023</small><br><b>Infrastructure Solutions Delivery Trainee</b><br>Password Solusi Sistem</div>
+        <div><small>2025 – 2027</small><br><b>S1 Sistem Informasi</b>, Universitas Tarumanagara (IPK 3,61)</div>
+        <div><small>2019 – 2022</small><br><b>D3 Teknik Telekomunikasi</b>, Politeknik Negeri Jakarta (IPK 3,12)</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Keahlian</h3>
+      <div class="bar"><p>Network Testing &amp; Troubleshooting<span>90%</span></p><i style="--w:.9"></i></div>
+      <div class="bar"><p>Konfigurasi Perangkat Jaringan<span>85%</span></p><i style="--w:.85"></i></div>
+      <div class="bar"><p>Validasi Data &amp; Migrasi<span>80%</span></p><i style="--w:.8"></i></div>
+      <div class="bar"><p>Dokumentasi Teknis<span>85%</span></p><i style="--w:.85"></i></div>
+      <div class="bar"><p>Presales &amp; Komunikasi<span>80%</span></p><i style="--w:.8"></i></div>
+      <div class="tags"><span>Spirent TestCenter</span><span>Spirent Octobox</span><span>Ostinato</span><span>EXFO</span><span>Aruba</span><span>Fortinet</span><span>Cisco</span><span>Huawei</span><span>ZTE</span><span>Ruijie</span><span>HPE</span><span>Nutanix</span></div>
+      <div class="tags"><span>Fortinet NSE 1–3</span><span>Red Hat RH124</span></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3 style="margin-bottom:6px">Mari terhubung</h3>
+    <p class="sub" style="margin-bottom:10px">Punya pertanyaan atau peluang kerja sama? Isi form ini.</p>
+    <form id="form" novalidate>
+      <div class="split" style="gap:18px">
+        <div class="f"><input id="n" required placeholder=" "><label for="n">Nama</label></div>
+        <div class="f"><input id="e" type="email" required placeholder=" "><label for="e">Email</label></div>
+      </div>
+      <div class="f"><select id="t"><option>Peluang kerja</option><option>Kolaborasi project</option><option>Tanya jawab teknis</option><option>Sekadar menyapa</option></select><label for="t">Topik</label></div>
+      <div class="f"><textarea id="m" rows="4" required placeholder=" "></textarea><label for="m">Pesan</label></div>
+      <button class="btn" type="submit">Kirim pesan</button>
+      <div class="ok" id="ok" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<!-- 3. PROJECT -->
+<section class="page" id="project">
+  <h2 class="title">Project</h2>
+  <p class="sub">Pekerjaan nyata yang pernah saya tangani, dari laboratorium pengujian sampai migrasi data.</p>
+  <div class="proj">
+    <div class="card"><div class="ic">📡</div><div>
+      <h3>Lab as a Service (LaaS) – Telkomsel</h3>
+      <p style="color:var(--mut)">Pengujian fungsional, performa, konektivitas, dan trafik pada ONT.</p>
+      <ul><li>Menyiapkan ONT, perangkat jaringan, dan lingkungan uji sesuai skenario.</li><li>Menjalankan test case dan mendukung Acceptance Test Procedure (ATP).</li><li>Berkoordinasi dengan vendor untuk verifikasi dan tindak lanjut temuan.</li></ul>
+      <div class="tags"><span>Spirent Octobox</span><span>Spirent TestCenter</span><span>Ostinato</span><span>EXFO</span></div></div></div>
+    <div class="card"><div class="ic">🗄️</div><div>
+      <h3>Migrasi Database XL–Tencent–Aerospike</h3>
+      <p style="color:var(--mut)">Mendukung proses migrasi dengan verifikasi data dan pemantauan operasional.</p>
+      <ul><li>Backup dan restore data.</li><li>Membandingkan dan memvalidasi data sumber dengan target.</li><li>Memantau progres, lalu menyusun laporan status dan temuan.</li></ul>
+      <div class="tags"><span>Data Validation</span><span>Monitoring</span><span>Reporting</span></div></div></div>
+    <div class="card"><div class="ic">🤝</div><div>
+      <h3>Product &amp; Presales – Intikom Berlian Mustika</h3>
+      <p style="color:var(--mut)">Menjembatani kebutuhan klien dengan solusi teknologi yang tepat.</p>
+      <ul><li>Wawancara pengguna untuk menggali kebutuhan dan masalah bisnis.</li><li>Demo produk dan rekomendasi solusi untuk pelanggan.</li><li>Koordinasi training dan penyampaian insight pasar ke manajemen.</li></ul>
+      <div class="tags"><span>Presentasi</span><span>Proposal</span><span>Demo Produk</span></div></div></div>
+    <div class="card"><div class="ic">🖧</div><div>
+      <h3>Infrastruktur IT – Password Solusi Sistem</h3>
+      <p style="color:var(--mut)">Mendukung pengelolaan layanan dan infrastruktur IT klien serta Quality Control.</p>
+      <div class="tags"><span>HPE</span><span>Nutanix</span><span>Aruba</span><span>Fortinet</span></div></div></div>
+  </div>
+</section>
+
+<!-- 4. HOBBY -->
+<section class="page" id="hobby">
+  <h2 class="title">Di luar jaringan</h2>
+  <p class="sub">Kalau tidak sedang mengutak-atik topologi, saya ada di lapangan. Coba klik bolanya!</p>
+  <div class="hob">
+    <div class="sport">
+      <div class="scene pitch"><button class="ball b1" aria-label="Bola sepak">⚽</button></div>
+      <div class="body"><h3>Sepak Bola</h3><p>Kerja tim, strategi, dan napas panjang. Mirip menjaga jaringan: satu posisi kosong, seluruh pertahanan goyah.</p><button class="score" data-s="Juggling">Juggling: 0</button></div>
+    </div>
+    <div class="sport">
+      <div class="scene court"><button class="ball b2" aria-label="Kok">🏸</button></div>
+      <div class="body"><h3>Badminton</h3><p>Reli cepat, refleks tajam. Smash terbaik lahir dari kesabaran menunggu bola yang tepat.</p><button class="score" data-s="Smash">Smash: 0</button></div>
+    </div>
+    <div class="sport">
+      <div class="scene clay"><button class="ball b3" aria-label="Bola tenis">🎾</button></div>
+      <div class="body"><h3>Tenis</h3><p>Duel satu lawan satu. Fokus, konsistensi, dan mental yang tidak mudah goyah di poin penentu.</p><button class="score" data-s="Ace">Ace: 0</button></div>
+    </div>
+  </div>
+  <div class="facts">
+    <div><b style="color:var(--li)">Pelajaran 1.</b> Latihan rutin mengalahkan bakat sesaat.</div>
+    <div><b style="color:var(--li)">Pelajaran 2.</b> Menang kalah itu biasa, yang penting terus bermain.</div>
+    <div><b style="color:var(--li)">Pelajaran 3.</b> Olahraga adalah cara terbaik me-reboot pikiran.</div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Abdel Tareq Winata · Jakarta, Indonesia · <a href="mailto:abdeltareqw@gmail.com" style="color:var(--cy)">abdeltareqw@gmail.com</a></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
